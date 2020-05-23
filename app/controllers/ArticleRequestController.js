@@ -1,7 +1,7 @@
-import Article from "../models/article";
+import Article from "../models/Article";
 import HttpStatus from '../constant/HttpStatus';
 
-const articleRequestController = {
+const ArticleRequestController = {
     getAllArticle: async (req, res) => {
         try {
             const articles = await Article.find({});
@@ -63,4 +63,4 @@ const articleRequestController = {
     },
 };
 
-export default articleRequestController;
+export default ArticleRequestController;
